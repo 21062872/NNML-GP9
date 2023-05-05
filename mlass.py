@@ -761,7 +761,7 @@ model.add(Dense(256, activation='relu'))
 model.add(Dense(1, activation='sigmoid'))
      
 
-model.compile('adam', loss=tf.losses.BinaryCrossentropy(), metrics=['accuracy'])
+model.compile('SGD', loss=tf.losses.BinaryCrossentropy(), metrics=['accuracy'])
      
 
 model.summary()
